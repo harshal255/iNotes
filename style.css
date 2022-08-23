@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro:wght@500&family=Space+Mono&family=Ubuntu:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono&family=Source+Code+Pro:wght@500&family=Space+Mono&display=swap');
+
+:root {
+    --primary: rgb(255, 242, 0);
+    --secondary-dark: hsl(191, 79%, 45%);
+    --secondary: hsl(191, 79%, 58%);
+    --side-bar-bg: rgb(231, 233, 235);
+    --side-bar-bg-light: rgb(219, 219, 219);
+    --border: 2px solid rgba(0, 109, 0, 0.414);
+    --border1: 3px solid rgb(0, 123, 255);
+    --border2: 3px solid rgb(255, 0, 225);
+    --border3: 3px solid rgb(255, 0, 0);
+    --border-radius: 4px;
+    --border-round: 50px;
+    --shadow: 0 -14px 38px -38px rgb(0 0 0 / 56%), 0 4px 25px 0 rgb(0 0 0 / 12%),
+        0 8px 10px -5px rgb(0 0 0 / 20%);
+    --shadow-amount: 10px;
+    --size: 10px;
+    --size2: 20px;
+    --size3: 30px;
+    --size4: 40px;
+    --size5: 50px;
+    --cur:pointer;
+    --font1: 'Quicksand', sans-serif;
+
+}
+
+/* ------------------custom utility classes---------------- */
+.font1{
+    font-family: var(--font1);
+}
+.flex {
+    display: flex;
+}
+
+.border {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.border1 {
+    border: 2px solid rgb(0, 123, 255);
+}
+
+.border2 {
+    border: 2px solid rgb(255, 0, 225);
+}
+
+.gap-0p5 {
+    gap: 0.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.ja-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.ja-sa-center {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.j-sa {
+    justify-content: space-around;
+}
+
+.a-fe {
+    align-items: flex-end;
+}
+
+.m-L-1 {
+    margin-left: 1rem;
+}
+
+.m-B-1 {
+    margin-bottom: 1rem;
+}
+
+
+.bold-600 {
+    font-weight: 600;
+}
+
+.white-color {
+    filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(161deg) brightness(105%) contrast(105%);
+}
+
+/* -----------------resets------------- */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body{
+    background-image: linear-gradient(to right top, #cffdfb, #d9fdff, #e4fdff, #effdff, #f9fdff, #f9fdff, #f9fdff, #f9fdff, #f0fdff, #e5feff, #dbfeff, #d1fffd);
+    height: 100vh;
+}

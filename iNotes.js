@@ -12,7 +12,7 @@ addnote.addEventListener("click", function (e) {
 
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addtext = "";
-    // console.log(notesObj);
+    console.log(notesObj);
     showNotes();
 
 })
@@ -21,12 +21,14 @@ const showNotes = () => {
     let notes = localStorage.getItem("notes");
     if (notes == null) {
         notesObj = [];
+        console.log("notes null")
     }
     else {
         notesObj = JSON.parse(notes);
+        console.log("notes object",notesObj)
     }
     let html = "";
-    notesObj.forEach(function (element, index) {
+    Array.from(notesObj).forEach(function (element, index) {
         html += ` <div class="my-2 mx-2 card notecard" style="width: 18rem;" data-aos="zoom-in-up">
 
     <div class="card-body">
@@ -38,16 +40,16 @@ const showNotes = () => {
 
     });
     let notesEle = document.getElementById('notes');
-    if (notesObj.length != 0) {
+    console.log(Array.from(notesObj).length);
+    if (Array.from(notesObj).length != 0) {
         notesEle.innerHTML = html;
     }
     else {
+        console.log("Nothing")
         notesEle.innerHTML = `Nothing..`
     }
-
-
-
 }
+showNotes();
 
 deletenote = (index) => {
     // console.log("I am Deleting...", index);
@@ -65,8 +67,6 @@ deletenote = (index) => {
 
     localStorage.setItem("notes", JSON.stringify(notesObj));
     showNotes();
-
-
 }
 
 
